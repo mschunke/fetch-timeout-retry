@@ -24,7 +24,9 @@ fetch("https://myawesomeapi.xyz/path?params=123", {
 With `fetch-timeout-retry`
 
 ```
-fetch("https://myawesomeapi.xyz/path?params=123", {
+import { fetchTimeoutRetry } from 'fetch-timeout-retry'
+
+fetchTimeoutRetry("https://myawesomeapi.xyz/path?params=123", {
   method: 'GET',
   headers: (...),
   {

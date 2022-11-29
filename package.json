@@ -1,12 +1,12 @@
 {
   "name": "fetch-timeout-retry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extended Fetch API with timeout and retries.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "ts-node example/index.ts",
+    "test": "ts-node ../examples/index.ts",
     "npm-publish": "tsc && npm version patch && npm publish"
   },
   "author": "Murilo Schünke",
