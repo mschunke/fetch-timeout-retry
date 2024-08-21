@@ -6,8 +6,10 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "ts-node ../examples/index.ts",
-    "npm-publish": "tsc && npm version patch && npm publish"
+    "test": "ts-node ./tests/index.ts",
+    "npm-publish-patch": "tsc && npm version patch && npm publish",
+    "npm-publish-minor": "tsc && npm version minor && npm publish",
+    "npm-publish-major": "tsc && npm version major && npm publish"
   },
   "author": "Murilo Schünke",
   "homepage": "https://github.com/mschunke/fetch-timeout-retry",
@@ -17,7 +19,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.5.0",
     "ts-node": "^10.8.1"
-  },
-  "dependencies": {}
+  }
 }
