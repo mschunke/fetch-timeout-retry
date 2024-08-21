@@ -72,7 +72,7 @@ async function runFailWithTimeoutTest(serverUrl: string): Promise<boolean> {
       {},
       {
         maxRetries: 4,
-        timeoutMs: 1000,
+        timeoutMs: 5000,
         loud: true,
       }
     );
