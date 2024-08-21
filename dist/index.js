@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.fetchTimeoutRetry = void 0;
+exports.fetchTimeoutRetry = fetchTimeoutRetry;
 function fetchTimeoutRetryInternal(input, init, { timeoutMs = 0, maxRetries, currentAttempt, }) {
     // Regular request
     const fetchReq = fetch(input, init);
@@ -56,4 +56,3 @@ function fetchTimeoutRetry(input, init, { timeoutMs = 0, maxRetries }) {
         currentAttempt: 0,
     });
 }
-exports.fetchTimeoutRetry = fetchTimeoutRetry;
