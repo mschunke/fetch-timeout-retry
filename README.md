@@ -38,7 +38,7 @@ fetchTimeoutRetry("https://myawesomeapi.xyz/path?params=123", {
 
 If `timeoutMs < 1` it will be ignored and only retries will be considered.
 
-The total quantity of retries will be of the original one plus the `maxRetries` value. So, if `maxRetries` is 4, the servel will be called 6 times until erroring out (1 from the original call, and 4 from the retries).
+The total quantity of retries will be of the original one plus the `maxRetries` value. So, if `maxRetries` is 4, the server will be called 5 times until erroring out (1 from the original call, and 4 from the retries).
 
 ### License
 
